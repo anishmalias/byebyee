@@ -1,0 +1,74 @@
+/* Bootstrap framework file */
+//@import "vendor/bootstrap/bootstrap.min"; 
+@import "vendor/bootstrap/bootstrap"; 
+
+/* Imports custom fonts */
+@import "byebyee/core/custom-fonts";
+
+/* Import font awesome */
+@import "byebyee/core/font-awesome";
+
+/* Import Byebyee Icons */
+@import "byebyee/core/byebyee-icons";
+
+/* Import variables*/
+@import "byebyee/variables/variables"; 
+
+/* Mixins */
+
+@import "byebyee/mixins/position";
+@import "byebyee/mixins/centering";
+@import "byebyee/mixins/transitions";
+@import "byebyee/mixins/keyframe-animations";
+@import "byebyee/mixins/animation";
+@import "byebyee/mixins/full-cover";
+@import "byebyee/mixins/flexbox-v2";
+@import "byebyee/mixins/triangle";
+@import "byebyee/mixins/link-unstyled";
+@import "byebyee/mixins/background-color-opacity";
+@import "byebyee/mixins/prefixer";
+@import "byebyee/mixins/transform";
+@import "byebyee/mixins/linear-gradient";
+@import "byebyee/mixins/box-shadow";
+@import "byebyee/mixins/gradient-remove";
+@import "byebyee/mixins/truncate";
+@import "byebyee/mixins/border-radius";
+@import "byebyee/mixins/currentview-vertical-align";
+@import "byebyee/mixins/equal-distribution";
+@import "byebyee/mixins/hover";
+@import "byebyee/mixins/placeholder-color";
+@import "byebyee/mixins/background-size";
+@import "byebyee/mixins/gradient";   
+
+
+/* Page Default settings */
+
+@import "byebyee/core/base";
+@import "byebyee/core/master-layout";
+
+/* Component */
+@import "byebyee/components/bootstrap-datepicker";
+@import "byebyee/components/lightslider";
+@import "byebyee/components/owl.carousel.min";
+@import "byebyee/components/owl.theme.default";
+@import "byebyee/components/selectize";
+
+@import "byebyee/components/buttons";
+@import "byebyee/components/form";
+@import "byebyee/components/badge";
+@import "byebyee/components/malihu-scrollbar";
+
+
+/* Screen component*/
+
+@import "byebyee/screen-components/header";
+@import "byebyee/screen-components/home";
+@import "byebyee/screen-components/booking";
+@import "byebyee/screen-components/pattern";
+@import "byebyee/screen-components/quotes-received";
+@import "byebyee/screen-components/footer";
+@import "byebyee/screen-components/travel-profile";
+@import "byebyee/screen-components/wishlist";
+@import "byebyee/screen-components/view-quotations";
+
+

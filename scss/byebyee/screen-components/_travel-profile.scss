@@ -1,0 +1,220 @@
+.byebyee-l-travel{
+	height: 574px;
+	position: relative;
+	background-color:$black;
+	background-position: center;
+	z-index: 1;
+
+	@include backgroundSize(cover);
+
+	@media screen and (max-width: 1200px){
+		height: auto;
+		padding-top: 35px;
+		padding-bottom: 35px;
+	}
+	.byebyee-c-container--lg{
+		height: 100%;
+	} 
+
+	.byebyee-l-travel__wrap{
+		height: 100%;
+		padding-bottom: 54px;
+
+		@include flexboxv2();
+		@include justify-contentv2(flex-end);
+		@include flex-directionv2(column);
+
+		@media screen and (max-width: 1200px){
+			padding-bottom: 15px;
+		}
+	}
+	.byebyee-l-travel__logo{
+		width: 173px;
+		height: 173px;
+		background: $white;
+		margin-bottom: 28px;
+		padding: 15px;
+
+		@include flexboxv2();
+		@include justify-contentv2(center);
+		@include align-itemsv2(center);
+		@include border-radius-all(40px);
+		@include flex-shrinkv2(0);
+
+		@media screen and (max-width: 1400px){
+			width: 143px;
+			height: 143px;
+
+			@include border-radius-all(20px);
+		}
+		@media screen and (max-width: 1200px){
+			width: 113px;
+    		height: 113px;
+		}
+		@media screen and (max-width: 767px){
+			width: 83px;
+			height: 83px;
+
+			@include border-radius-all(10px);
+		}
+	}
+	.byebyee-l-travel__info-wrap{
+		@include flexboxv2();
+
+		@media screen and (max-width: 991px){
+			@include flex-directionv2(column);
+		}
+
+		.byebyee-l-travel__name{
+			width: 331px;
+			margin-right: 58px;
+
+			@include flexv2(0,0,331px);
+
+			@media screen and (max-width: 1200px){
+				width: 220px;
+
+				@include flexv2(0,0,220px);
+			}
+			@media screen and (max-width: 991px){
+				margin-right:0;
+				margin-bottom: 35px;
+
+				@include flexv2(auto);
+			}
+
+			h3{
+				margin: 0 0 10px;
+				padding: 0;
+				color: $white;
+				font-size: 50px;
+				font-weight: 400;
+
+				@media screen and (max-width: 1400px){
+					font-size: 35px;
+					line-height: 35px;
+				}
+				@media screen and (max-width: 1200px){
+					font-size: 26px;
+					line-height: 24px;	
+				}	
+			}
+			p{
+				margin: 0;
+				padding: 0 0 0 27px;
+				position: relative;
+				color: $white;
+				font-size: 16px;
+				line-height: 23px;
+				font-weight: 700;
+
+				&:before{
+					content: "\f3c5";
+					font-family: $font-awesome;
+					font-weight: 900;
+					font-size: 18px; 
+					position: absolute;
+					top: 0px;
+					left: 0px;
+					color: $white;
+				}
+			}
+		}
+		.byebyee-l-cnf__wrap{
+			width: 100%;
+
+			@include flexboxv2();
+			@include justify-contentv2(space-between);
+
+			@media screen and (max-width: 1400px){
+				@include flex-wrapv2(wrap);
+			}
+		}
+		.byebyee-l-travel__cnf{
+			margin-top: 38px;
+
+			@media screen and (max-width: 1400px){
+				min-width: 50%;
+				margin-top: 0;
+				margin-bottom: 25px;
+
+				@include flex-shrinkv2(0);
+			}
+
+			@media screen and (max-width: 480px){
+				width: 100%;
+			}
+			h5{
+				margin: 0 0 6px;
+				padding: 0;
+				font-size: 14px;
+				color: $white;
+				font-weight: 300;
+			}
+			p{
+				margin: 0;
+				padding: 0;
+				font-size: 16px;
+				color: $white;
+				font-weight: 700;
+				line-height: 17px;
+			}
+		}
+		.byebyee-l-travel__ico-wrap{
+			@include flexboxv2();
+			@include align-itemsv2(center);
+
+			@media screen and (max-width: 480px){
+				width: 100%;
+
+				@include flex-wrapv2(wrap);
+			}
+			.byebyee-l-travel__cnf-ico{
+				@include flexboxv2();
+				@include align-itemsv2(center);
+				@include flex-directionv2(column);
+				@include flex-shrinkv2(0);
+
+				@media screen and (max-width: 480px){
+					width: 50%;
+					margin-top: 10px;
+					margin-bottom: 10px;
+				}
+				+ .byebyee-l-travel__cnf-ico{
+					margin-left: 42px;
+
+					@media screen and (max-width: 480px){
+						margin-left: 0;
+					}
+				}
+				i{
+					font-size: 31px;
+					color: $primary_color;
+				}
+				span{
+					font-size: 14px;
+					color: $white;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
+.byebyee-l-travle__img{
+	display: none;
+}
+.byebyee-l-our__bus{
+	position: relative;
+
+	.byebyee-l-our-bus__all{
+		position: absolute;
+		top: -10px;
+		right: 13px;
+
+		@media screen and (max-width: 1200px){
+			position: static;
+			margin-top: 35px;
+			text-align: center;
+		}
+	}
+}

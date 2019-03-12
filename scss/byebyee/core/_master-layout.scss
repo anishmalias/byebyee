@@ -1,0 +1,17 @@
+.byebyee-c-container--lg{
+	max-width: 1591px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+
+	@media screen and (max-width: 767px){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.byebyee-c-container--sm{
+	max-width: 1371px;
+	margin: 0 auto;
+	padding-left: 30px;
+	padding-right: 30px;
+}

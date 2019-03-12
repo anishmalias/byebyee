@@ -1,0 +1,28 @@
+.byebyee-c-badge{
+	display: inline-block;
+	font-size: 26px;
+	font-weight: 700;
+	color: $dark-grey-text;
+	font-family: $secondary_font;
+	padding: 13px 28px;
+	background: lighten($black, 50%);
+	
+	@include border-radius-all(28px 24px 24px 0);
+
+	@media screen and (max-width: 991px){
+	    font-size: 18px;
+	    padding: 7px 22px; 
+	}
+
+	&.byebyee-c-badge--yellow{
+		background: $badge-yellow;
+	}
+	&.byebyee-c-badge--red{
+		background: $badge-red;
+		color: $white;
+	}
+	&.byebyee-c-badge--green{
+		background: $badge-green;
+		color: $white;   
+	}
+} 

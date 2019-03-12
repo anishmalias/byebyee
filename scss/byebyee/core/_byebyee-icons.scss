@@ -1,0 +1,108 @@
+@font-face {
+  font-family: 'byebyee';
+  src:  url('../fonts/byebyee-icons/byebyee.eot?i234gq');
+  src:  url('../fonts/byebyee-icons/byebyee.eot?i234gq#iefix') format('embedded-opentype'),
+    url('../fonts/byebyee-icons/byebyee.ttf?i234gq') format('truetype'),
+    url('../fonts/byebyee-icons/byebyee.woff?i234gq') format('woff'),
+    url('../fonts/byebyee-icons/byebyee.svg?i234gq#byebyee') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+[class^="bb-"], [class*=" bb-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'byebyee' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.bb-icon-stay:before {
+  content: "\e917";
+}
+.bb-icon-campfire:before {
+  content: "\e918";
+}
+.bb-icon-elephant:before {
+  content: "\e919";
+}
+.bb-icon-food:before {
+  content: "\e91a";
+}
+.bb-icon-ac:before {
+  content: "\e911";
+}
+.bb-icon-add-circle:before {
+  content: "\e912";
+}
+.bb-icon-calander:before {
+  content: "\e913";
+}
+.bb-icon-close-circle:before {
+  content: "\e914";
+}
+.bb-icon-music:before {
+  content: "\e915";
+}
+.bb-icon-seat:before {
+  content: "\e916";
+}
+.bb-icon-arrrow-top:before {
+  content: "\e910";
+}
+.bb-icon-angle-left:before {
+  content: "\e90c";
+}
+.bb-icon-angle-right:before {
+  content: "\e90d";
+}
+.bb-icon-arrrow-right:before {
+  content: "\e90e";
+}
+.bb-icon-quotes:before {
+  content: "\e90f";
+}
+.bb-icon-car-collection:before {
+  content: "\e908";
+}
+.bb-icon-price-tag:before {
+  content: "\e909";
+}
+.bb-icon-single-car:before {
+  content: "\e90a";
+}
+.bb-icon-status:before {
+  content: "\e90b";
+}
+.bb-icon-computer:before {
+  content: "\e906";
+}
+.bb-icon-van:before {
+  content: "\e907";
+}
+.bb-icon-needle:before {
+  content: "\e900";
+}
+.bb-icon-car:before {
+  content: "\e901";
+}
+.bb-icon-left-angle:before {
+  content: "\e902";
+}
+.bb-icon-lock:before {
+  content: "\e903";
+}
+.bb-icon-notes:before {
+  content: "\e904";
+}
+.bb-icon-pin:before {
+  content: "\e905";
+}
+

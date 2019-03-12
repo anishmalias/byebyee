@@ -1,0 +1,248 @@
+.bybeyee-c-btn--plan-text{
+	font-size: 14px;
+	color: $color-dark-grey;
+	font-family: $secondary_font;
+	line-height: normal;
+	font-weight: 400;
+	padding: 0;
+	border: none;
+	text-decoration: none;
+
+	@include transitionAll(color ease 0.2s);
+
+	&:hover, &:focus{
+		color: $primary_color;
+	}
+}
+.bybeyee-c-btn--border{
+	font-size: 14px;
+	color: $primary_color;
+	font-family: $secondary_font;
+	line-height: normal;
+	font-weight: 400;
+	border: $primary_color 1px solid;
+	line-height: normal;
+	padding: 9px 22px;
+
+	@include border-radius-all(2px);
+	@include transitionAll(border ease 0.2s, background ease 0.2s, color ease 0.2s);
+
+	&:hover, &:focus{
+		background: $primary_color;
+		color: $white;
+	}
+	@media screen and (max-width: 480px){
+		padding: 6px 15px;
+	}
+}
+
+.byebyee-c-btn--block-mode{
+	border: none;
+	background: $primary_color;
+	padding: 0;
+	display: inline-block;
+	line-height: normal;
+	font-size: 18px;
+	font-family: $secondary_font;
+	color: $white;
+	font-weight: 400;
+	padding: 22px 48px;
+	cursor: pointer;
+
+	@include border-radius-all(3px);
+	@include transitionAll(border ease 0.2s, background ease 0.2s, color ease 0.2s);
+
+	&:hover, &:focus{
+		background: lighten($primary_color, 7%);
+	}
+}
+.byebyee-c-btn--link-angle{
+	display: inline-block;
+	border: none;
+	background: none;
+	line-height: 22px;
+	outline: none;
+	padding: 0 20px 0 0;
+	font-size: 20px;
+	color: $primary_color;
+	font-weight: 400;
+	position: relative;
+
+	@include transitionAll(color ease 0.2s);
+
+	@media screen and (max-width: 1200px){
+		font-size: 17px;
+	}
+
+	&:after{
+		content: "\e902";
+		font-family: $byebyee_icons;
+		font-size: 12px;
+		position: absolute;
+		top: 0;
+		right: 0;
+
+		@media screen and (max-width: 1200px){
+			font-size: 10px;
+			top: 2px;
+		}
+	}
+	&:hover, &:focus{
+		color: lighten($primary_color, 20%); 
+	}
+}
+
+.byebyee-c-btn--primary{
+	display: inline-block;
+	background: $primary_color;
+	color: $white;
+	border: none;
+	line-height: normal;
+	font-family: $primary_font;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 19px 46px;
+	outline: none;
+
+	@include border-radius-all(30px);
+	@include transitionAll(background ease 0.2s);
+
+	&:hover, &:focus{
+		background: lighten($primary_color, 10%);
+		color: $white;
+	}
+}
+.byebyee-c-btn--secondary{
+	display: inline-block;
+	background: $secondary-color;
+	color: $white;
+	border: none;
+	line-height: normal;
+	font-family: $primary_font;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 19px 46px;
+	outline: none;
+
+	@include border-radius-all(30px);
+	@include transitionAll(background ease 0.2s);
+
+	&:hover, &:focus{
+		background: lighten($secondary-color, 10%);
+		color: $white;
+	}
+}
+.byebyee-c-btn--primary__shadow{
+	@include boxShadow(0 4px 6px rgba($black,0.06));
+}
+.byebyee-c-sign-up-logo{
+	padding: 18px 33px;
+	background:$white;
+
+	@include inline-flexv2();
+	@include align-itemsv2(center);
+	@include border-radius-all(30px);
+	@include boxShadow(0 0 29px rgba($primary_color,0.1));
+	@include transitionAll(box-shadow ease 0.2s);
+
+	span{
+		color: $warm;
+		font-family: $primary_font;
+		font-size: 16px;
+	}
+	img{
+		max-width: 23px;
+		margin-right: 18px;
+	}
+	&:hover{
+		@include boxShadow(0 0 39px rgba($primary_color,0.25));
+	}
+}
+.byebyee-c-close-circle{
+	color: $white;
+	font-size: 19px;
+	line-height: normal;
+	outline: none;
+
+	@include transitionAll(color ease 0.2s);
+
+	&:hover, &:focus{
+		color: rgba($white, 0.50);
+	}
+}
+
+.bybeyee-c-btn--round-add{
+	font-size: 25px;
+	color: $white;
+	background: none;
+	border: none;
+	padding: 0;
+	outline: none;
+	line-height: normal;
+	cursor: pointer;
+
+	@include transitionAll(color ease 0.2s);
+
+	&:hover{
+		color: rgba($white, 0.70);
+	}
+}
+
+.byebyee-c-plain-link{
+	display: inline-block;
+	line-height: normal;
+	font-size: 14px;
+	color: $primary_color;
+	font-weight: 700;
+
+	@include transitionAll(color ease 0.2s);
+
+	&:hover{
+		color: lighten($primary_color, 15%);
+	}
+}
+
+.byebyee-c-button-back--arrow{
+	background: none;
+	border: none;
+	padding: 0;
+	font-size: 14px;
+	color: #979797;
+	font-weight: 400;
+	text-transform: capitalize;
+
+	@include inline-flexv2();
+	@include align-itemsv2(center);
+	@include flex-shrinkv2(0);
+
+	&:before{
+		content: "\e90e";
+		font-family: $byebyee_icons;
+		display: inline-block;
+		font-size: 23px;
+		color: $primary_color;
+		line-height: normal;
+		margin-right: 10px;
+
+		@include transform(rotate(180deg));
+	}
+}
+.byebyee-c-btn--plain{
+	display: inline-block;
+	background: $white;
+	color: $primary_color;
+	border: none;
+	line-height: normal;
+	font-family: $primary_font;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 19px 46px;
+	outline: none;
+
+	@include border-radius-all(30px);
+	@include transitionAll(background ease 0.2s);
+
+	&:hover, &:focus{
+		color: lighten($primary_color, 10%);
+	}
+}
