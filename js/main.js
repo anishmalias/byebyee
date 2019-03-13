@@ -341,5 +341,13 @@ $(function(){
 
 	}
 	viewquotations();
+
+	if($('.byebyee-l-qd__pop').exists())
+	{
+		$('.byebyee-l-qd__pop').smallipop({
+			triggerOnClick: true ,
+			theme: 'byebyee',
+		});
+	}
 });
 
