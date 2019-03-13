@@ -212,7 +212,10 @@ $(function(){
 	
 	if($('.byebyee-c-datepicker').exists())
 	{
-		$('.byebyee-c-datepicker').datepicker();
+		$('.byebyee-c-datepicker').datetimepicker({	
+            debug:true,
+            collapse: true,
+		});
 	}
 	
 	// Custom select

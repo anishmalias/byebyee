@@ -419,25 +419,39 @@
 }
 
 /* Bootstrap Datepicker */
+.datetimepicker { 
+	min-width: 200px;
 
-.datepicker{
-    td, th{
-    	width: 40px;
-    	height: 40px;
-    }
-    .datepicker-days{
-    	tbody{
-    		td{
-    			@include transitionAll(background ease 0.2s, color ease 0.2s);
-    			@include border-radius-all(50%);
-    		}
-    	} 
-    } 
+    
     table{
+    	width: 100%;
+    	
+    	td, th{
+	    	width: 40px;
+	    	height: 40px;
+	    	text-align: center;
+
+	    	&.day{
+	    		width: 40px;
+	    		height: 40px;
+
+	    		@include transitionAll(background ease 0.2s, color ease 0.2s);
+	    		@include border-radius-all(50%);
+	    	}
+	    }
+	    .datepicker-days{
+	    	tbody{
+	    		td{
+	    			@include transitionAll(background ease 0.2s, color ease 0.2s);
+	    			@include border-radius-all(50%);
+	    		}
+	    	} 
+	    } 
     	tr{
     		td{
     			&.today{
     				background: $dt-select !important;
+    				color: $white !important;
     				&:hover{
 	    				background: $dt-semi !important;
 	    				color: $white!important;
@@ -455,6 +469,19 @@
 					@include justify-contentv2(center);
 					@include align-itemsv2(center);
 
+					&.month, &.year{
+						@include inline-flexv2();
+					}
+					&.decade{
+						width: 120px;
+
+						@include border-radius-all(5px);
+						@include inline-flexv2();
+
+						&:empty{
+							display: none;
+						}
+					}
     				&.active{
     					background: $dt-select !important;
 
@@ -494,8 +521,8 @@
     		}
     	}
     }
+	
 }
-
 
 
 
