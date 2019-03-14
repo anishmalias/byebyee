@@ -439,6 +439,11 @@
 	    		@include border-radius-all(50%);
 	    	}
 	    }
+	    th{
+	    	&.switch{
+	    		width: auto;
+	    	}
+	    }
 	    .datepicker-days{
 	    	tbody{
 	    		td{
@@ -465,7 +470,7 @@
 
 					@include border-radius-all(50%);
 					@include transitionAll(background ease 0.2s, color ease 0.2s);
-					@include flexboxv2();
+					@include inline-flexv2();
 					@include justify-contentv2(center);
 					@include align-itemsv2(center);
 
@@ -484,6 +489,7 @@
 					}
     				&.active{
     					background: $dt-select !important;
+    					color: $white!important;
 
     					&:hover{
 		    				background: $dt-semi !important;
