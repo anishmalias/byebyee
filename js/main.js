@@ -353,13 +353,13 @@ $(function(){
 		});
 	}
 
-	function viewquotations(){
-		var $viewquotationsSlider = $(".byebyee-l-qv__slider");
-		$viewquotationsSlider.on('initialized.owl.carousel', function(event) {
+	function quoteVehicle(){
+		var $quoteVehicleSlider = $(".byebyee-l-qv__slider");
+		$quoteVehicleSlider.on('initialized.owl.carousel', function(event) {
 			$(".byebyee-l-qv__slider--wrap").css({height:'auto', overflow:'visible'});
 			$(".byebyee-l-qv__slider--wrap .byebyee-l-review__loader").hide(150);
 		});
-		$viewquotationsSlider.owlCarousel({
+		$quoteVehicleSlider.owlCarousel({
 			items: 1,
 			margin: 10,
 			loop: true,
@@ -371,5 +371,6 @@ $(function(){
 			autoplayTimeout:2000
 		});
 	}
+	quoteVehicle();
 });
 

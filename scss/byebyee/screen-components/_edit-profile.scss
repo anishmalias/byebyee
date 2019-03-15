@@ -1,0 +1,29 @@
+.byebyee-l-edit__profile{
+	max-width: 392px;
+	padding-top: 16px;
+
+	.byebyee-c-formgroup {
+		+ .byebyee-c-formgroup {
+			margin-top: 61px;
+		}
+	}
+	.byebyee-l-profile__save{
+		padding-top: 11px;
+
+		.byebyee-c-sign-up-logo{
+			min-width: 120px; 
+		}
+	}	
+}
+.byebyee-l-form__change-password{
+	position: relative;
+
+	.byebyee-c-link-underline{
+		position: absolute;
+		bottom: 15px;
+    	right: 9px;
+	}
+	.form-control{
+		padding-right: 65px; 
+	}
+}

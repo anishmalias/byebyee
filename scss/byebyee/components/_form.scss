@@ -93,6 +93,30 @@
 			}
 		}
 	}
+	&.byebyee-c-formgroup--large{
+		margin-top: 28px;
+		margin-bottom: 35px;
+		
+		.byebyee-c-formgroup__label{
+			color: $dark-grey-text;
+			font-size: 20px;
+			font-family: $primary_font;
+		}
+		.form-control{
+			color: $dark-grey-text;
+			font-size: 20px;
+			font-family: $primary_font;
+			padding-bottom: 12px;
+
+			&:focus, &:valid{
+				~ .byebyee-c-formgroup__label{
+					color: $dark-grey-text;
+					font-size: 14px;
+					top: -25px;
+				}
+			}
+		}
+	}
 }
 
 .byebyee-c-formgroup{

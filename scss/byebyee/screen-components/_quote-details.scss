@@ -218,6 +218,7 @@
 	.byebyee-l-qv__right{
 		width: 413px;
 		max-width: 100%;
+		min-width:0;
 
 		@include flexv2(0,0, 413px);
 		@include flex-shrinkv2(0);

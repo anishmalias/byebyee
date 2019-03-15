@@ -144,6 +144,7 @@
 	@include border-radius-all(30px);
 	@include boxShadow(0 0 29px rgba($primary_color,0.1));
 	@include transitionAll(box-shadow ease 0.2s);
+	@include justify-contentv2(center);
 
 	span{
 		color: $warm;
@@ -244,5 +245,21 @@
 
 	&:hover, &:focus{
 		color: lighten($primary_color, 10%);
+	}
+}
+.byebyee-c-link-underline{
+	background: none;
+	border: none;
+	padding: 0;
+	line-height: normal;
+	font-size: 14px;
+	color: $primary_color;
+	text-decoration: underline;
+
+	@include transitionAll(color ease 0.2s);
+
+	&:hover, &:focus{
+		color: lighten($primary_color, 15%);
+		text-decoration: underline;
 	}
 }
