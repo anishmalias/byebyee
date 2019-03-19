@@ -247,22 +247,67 @@ $(function(){
 		var optionValues = [];
 		var $selectTag = $(".byebyee-c-select__init");
 
-		$selectTag.parent().append('<span class="byebyee-c-select--selected"></span><ul class="byebyee-c-select--list"></ul>');
-		// $selectTag.find("option").each(function() {
-		//     optionValues.push($(this).html());
-		// });
-		// $selectTag.parent().find(".byebyee-c-select--list").html(optionValues);
+		$selectTag.each(function(){
+			var optionValues = [];
+			$(this).parent().append('<span class="byebyee-c-select--selected"></span><ul class="byebyee-c-select--list"></ul>');
 
+			var $selected = $(this).find(":selected").text();
+			
+			var opts = $(this).find('option').map(function() { 
+				optionValues.push($(this).text());
+			}).get();
+					
+			var option = '';
+			for(var i = 0; i < optionValues.length; i++){
+				option += '<li value="' + optionValues[i] + '">' + optionValues[i] + '</li>';
+			}
+			$(this).parent().find(".byebyee-c-select--list").append(option);
+			$(this).parent().find(".byebyee-c-select--selected").text($selected);
 
-		var opts = $('.byebyee-c-select__init > option').map(function() { 
-			//return this.text; 
-			optionValues.push($(this).text());
-		}).get();
-		$selectTag.parent().find(".byebyee-c-select--list").html(opts);
+			$(this).parent().find(".byebyee-c-select--selected").click(function(){
+				$selectTag.parent().find(".byebyee-c-select--list").hide();
+				$(this).next().show();
+			});
+			$(this).parent().find(".byebyee-c-select--list li").click(function(){
+				
+				$(this).parent().find("li").removeClass("selected");
+				$(this).addClass("selected");
 
-		
+				// Update selected value
+				var $wrapper = $(this).parent().parent();
+				var $updatedValue = $(this).text();
+				$wrapper.find(".byebyee-c-select--selected").text($updatedValue);
+				$(this).parent().hide();
+
+				// Check selcted element is empty or not
+
+				if(!$wrapper.find(".byebyee-c-select--selected").is(':empty')){
+					$wrapper.addClass("byebyee-c-formgroup--open");
+				}else{
+					$wrapper.removeClass("byebyee-c-formgroup--open");
+				}
+
+				// Change select tag values
+
+				var $selectIndex = $(this).index() + 1;
+				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected');
+				$wrapper.find('.byebyee-c-select__init option:nth-child('+ $selectIndex +')').attr('selected', 'selected');
+				
+			});
+
+			// Outside click 
+
+			$(document).mouseup(function(e) 
+				{
+				var container = $selectTag.parent();
+				if (!container.is(e.target) && container.has(e.target).length === 0) 
+				{
+					container.find(".byebyee-c-select--list").hide();
+				}
+			});
+		});	
 	}
-	//selectTag();
+	selectTag();
 
 	// Travel Background set
 
