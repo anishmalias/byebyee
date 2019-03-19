@@ -37,8 +37,8 @@
                         </a>
                     </div>
                     <div class="byebyee-l-signup-wrap">
-                        <a href="#" class="bybeyee-c-btn--plan-text">Sign up</a>
-                        <a href="#" class="bybeyee-c-btn--border">Log in</a>
+                        <a href="#" class="bybeyee-c-btn--plan-text byebyee-btn__login" data-src="#byebyee-l-signup__modal">Sign up</a>
+                        <a href="javascript:void(0)" class="bybeyee-c-btn--border byebyee-btn__login" data-src="#byebyee-l-login__modal">Log in</a>
                     </div>
                     <div class="byebyee-l-social-connect">
                         <a href="#" class="byebyee-l-social__fb"><i class="fab fa-facebook-f"></i></a>
@@ -575,6 +575,150 @@
                 <i class="bb-icon-arrrow-top"></i>
             </a>
         </footer>
+
+        <div class="byebyee-l-none" id="byebyee-l-login__modal">
+            <div class="byebyee-l-login__wrap">
+                <div class="byebyee-l-login__left">
+                    <div class="byebyee-l-login__logo">
+                        <h2>
+                            <img src="img/logo.png" class="img-fluid">
+                        </h2>
+                    </div>
+                    <div class="byebyee-l-login__head">
+                        <h3>Welcome Back, Please login to your account.</h3>
+                    </div>
+                    <div class="byebyee-l-login__method">
+                        <a href="#" class="byebyee-c-button__login">
+                            <span class="byebyee-l-login__icon">
+                                <img src="img/img-fb-login.svg" class="img-fluid">
+                            </span>
+                            <span class="byebyee-l-login__text">Facebook</span>
+                        </a>
+                        <a href="#" class="byebyee-c-button__login">
+                            <span class="byebyee-l-login__icon">
+                                <img src="img/img-google-login.svg" class="img-fluid">
+                            </span>
+                            <span class="byebyee-l-login__text">Google</span>
+                        </a>
+                    </div>
+                    <div class="byebyee-l-login__or">
+                        <h5>Or</h5>
+                    </div>
+                    <div class="bybyee-l-login__form">
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large byebyee-l-form__number-feild">
+                            <input type="text" class="form-control" name="" required="" value="">
+                            <span class="bybyee-l-country-code">+91</span>
+                        </div>
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large">
+                            <input type="password" class="form-control" name="" required="" value="fghdfgh">
+                            <label class="byebyee-c-formgroup__label">Password</label>
+                        </div>
+                        <div class="byebyee-l-login-form__user-rem">
+                            <div class="byebyee-l-user__left">
+                                <div class="byebyee-c-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="name" value="name">
+                                        <span class="byebyee-c-checkbox__icon"></span>
+                                        <span class="byebyee-c-checkbox__label">
+                                            <span class="byebyee-c-checkbox__text">Remember Me</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="byebyee-l-user__right">
+                                <a href="" class="byebyee-c-plain-link">Forgot?</a>
+                            </div>
+                        </div>
+                        <div class="byebyee-l-login__submit">
+                            <button class="byebyee-c-btn--primary byebyee-c-btn--sm">Login</button>
+                            <button class="byebyee-c-btn--plan-border byebyee-c-btn--sm">Sign up</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="byebyee-l-login__right">
+
+                </div>
+            </div>
+        </div>
+
+        <div class="byebyee-l-none" id="byebyee-l-signup__modal">
+            <div class="byebyee-l-login__wrap">
+                <div class="byebyee-l-login__left">
+                    <div class="byebyee-l-login__logo mb-3">
+                        <h2>
+                            <img src="img/logo.png" class="img-fluid">
+                        </h2>
+                    </div>
+                    <div class="byebyee-l-login__head text-center mb-3">
+                        <h3>Sign up</h3>
+                    </div>
+                    <div class="byebyee-l-login__method">
+                        <a href="#" class="byebyee-c-button__login">
+                            <span class="byebyee-l-login__icon">
+                                <img src="img/img-fb-login.svg" class="img-fluid">
+                            </span>
+                            <span class="byebyee-l-login__text">Facebook</span>
+                        </a>
+                        <a href="#" class="byebyee-c-button__login">
+                            <span class="byebyee-l-login__icon">
+                                <img src="img/img-google-login.svg" class="img-fluid">
+                            </span>
+                            <span class="byebyee-l-login__text">Google</span>
+                        </a>
+                    </div>
+                    <div class="byebyee-l-login__or">
+                        <h5>Already have an account ?</h5>
+                    </div>
+                    <div class="bybyee-l-login__form">
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large">
+                            <input type="password" class="form-control" name="" required="" value="">
+                            <label class="byebyee-c-formgroup__label">Name</label>
+                        </div>
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large byebyee-l-form__number-feild">
+                            <input type="text" class="form-control" name="" required="" value="987654321">
+                            <label class="byebyee-c-formgroup__label">Mobile</label>
+                            <span class="bybyee-l-country-code">+91</span>
+                        </div>
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large">
+                            <input type="password" class="form-control" name="" required="" value="">
+                            <label class="byebyee-c-formgroup__label">Email</label>
+                        </div>
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large">
+                            <input type="password" class="form-control" name="" required="" value="fghdfgh">
+                            <label class="byebyee-c-formgroup__label">Password</label>
+                        </div>
+                        <div class="byebyee-c-formgroup byebyee-c-formgroup--material byebyee-c-formgroup--large">
+                            <input type="password" class="form-control" name="" required="" value="fghdfgh">
+                            <label class="byebyee-c-formgroup__label">Confirm Password</label>
+                        </div>
+                        <div class="byebyee-l-login-form__user-rem">
+                            <div class="byebyee-l-user__left">
+                                <div class="byebyee-c-checkbox">
+                                    <label>
+                                        <input type="checkbox" name="name" value="name">
+                                        <span class="byebyee-c-checkbox__icon"></span>
+                                        <span class="byebyee-c-checkbox__label">
+                                            <span class="byebyee-c-checkbox__text">Remember Me</span>
+                                        </span>
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="byebyee-l-user__right">
+                                <a href="" class="byebyee-c-plain-link">Forgot?</a>
+                            </div>
+                        </div>
+                        <div class="byebyee-l-login__submit">
+                            <button class="byebyee-c-btn--primary byebyee-c-btn--sm">Login</button>
+                            <button class="byebyee-c-btn--plan-border byebyee-c-btn--sm">Sign up</button>
+                        </div> 
+                    </div>
+                </div>
+                <div class="byebyee-l-login__right">
+
+                </div>
+            </div>
+        </div>
+
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
