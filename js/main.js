@@ -305,18 +305,7 @@ $(function(){
 					container.find(".byebyee-c-select--list").hide();
 				}
 			});
-		});
-		
-		
-		
-
-
-		
-		
-
-		
-
-		
+		});	
 	}
 	selectTag();
 
