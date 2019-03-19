@@ -62,6 +62,30 @@
 			left: 26px;
 		}
 	}
+
+	&.byebyee-l-form__number-feild{
+		.byebyee-c-formgroup__label{
+			left: 40px;
+		}
+		.form-control{
+			padding-left: 42px;
+
+			&:focus, &:valid{
+				~ .byebyee-c-formgroup__label{
+					left: 0;
+				}
+			}
+		}
+		.bybyee-l-country-code{
+			position: absolute;
+			top: 1px;
+			left: 0px;
+			font-size: 20px;
+			color: #a5a5a5;
+			line-height: normal;
+		}
+	}
+	
 	&.byebyee-c-formgroup--material-mandatory{
 		.byebyee-c-formgroup__label{
 			&:after{
