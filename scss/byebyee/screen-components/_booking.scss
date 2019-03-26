@@ -40,6 +40,18 @@
 			margin-top: 13px; 
 		}
 	}
+	h4{
+		font-size: 30px;
+		color: $dark-grey-text;
+		font-weight: 700;
+		margin: 0px;
+		padding: 0;
+		line-height: normal;
+
+		@media screen and(max-width: 991px){
+			font-size: 25px;
+		}
+	}
 }
 .byebyee-l-booknow-wrap{
 	max-width: 1423px;
