@@ -88,3 +88,145 @@
 		}
 	}
 }
+
+.byebyee-l-cm--search{
+	width: 100%;
+	padding: 0 20px;
+
+	@include flexboxv2();
+	@include align-itemsv2(center);
+	@include justify-contentv2(center);
+}
+.byebyee-l-cm__sr-wrap{
+	position: relative;
+
+	.byebyee-l-cm__search-field{
+		border: none;
+		background: none;
+		font-size: 20px;
+		color: #a1a0a0;
+		padding: 0 0 0 52px;
+		width: 100%;
+
+		&::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+			color: #a1a0a0;
+		}
+		&::-moz-placeholder { /* Firefox 19+ */
+			color: #a1a0a0;
+		}
+		&:-ms-input-placeholder { /* IE 10+ */
+			color: #a1a0a0;
+		}
+		&:-moz-placeholder { /* Firefox 18- */
+			color: #a1a0a0;
+		}
+	}
+	.byebyee-l-cm__search-icon{
+		position: absolute;
+		top: -4px;
+		left: 0px;
+		font-size: 33px;
+		color: #a1a0a0;
+	}
+}
+.byebyee-l-company__wrap{
+	margin-left: -13px;
+	margin-right: -13px;
+
+	@include flexboxv2();
+	@include align-itemsv2(center);
+	@include flex-wrapv2(wrap);
+	
+	@media screen and(max-width: 767px){
+		@include justify-contentv2(center);
+	}
+
+	@media screen and(max-width: 600px){
+		margin-left: 0;
+		margin-right: 0;
+	}
+	.byebyee-l-item__block{
+		width: calc(25% - 26px);
+		max-width: 360px;
+		margin-left: 13px;
+		margin-right: 13px;
+		margin-bottom: 26px;
+
+		@include boxShadow(0 0 32px rgba($black, 0.14));
+
+		@media screen and(max-width: 1200px){
+			width: calc(33.333% - 26px);
+		}
+
+		@media screen and(max-width: 991px){
+			width: calc(50% - 26px);
+		}
+		@media screen and(max-width: 600px){
+			width: 100%;
+			margin-left: auto;
+			margin-right: auto;
+		}
+
+		.byebyee-l-item__tp{
+			.byebyee-l-item__rating{
+				margin-left: auto;
+			}
+		}
+	}
+}
+.byebyee-l-cm__wrp{
+	padding: 25px 25px;
+
+	.byebyee-l-company__seats{
+		margin-bottom: 30px;
+
+		@include flexboxv2();
+		@include align-itemsv2(center);
+		@include justify-contentv2(center);
+
+		.byebyee-l-company__seat-count{
+			font-size: 18px;
+			color: $dark-grey-text;
+			font-family: $secondary_font;
+			font-weight: 400;
+			line-height: normal;
+			padding: 0 11px; 
+
+			@include flexboxv2();
+			@include align-itemsv2(center);
+			@include justify-contentv2(center);
+
+			&:before{
+				content: "\e916";
+				font-family: $byebyee_icons;
+				font-size: 20px;
+				color: $primary_color;
+				margin-right: 5px;
+
+				@include flex-shrinkv2(0);
+			}
+		}
+	} 
+	.byebyee-l-cm__btn-group{
+		@include flexboxv2();
+		@include align-itemsv2(center);
+		@include justify-contentv2(center);
+
+		@media screen and (max-width: 1200px){
+			display: block;
+		}
+		* {
+			width: 100%;
+			margin: 0 4px;
+			padding-left: 10px;
+		    padding-right: 10px;
+		    text-align: center;
+
+		    + *{
+		    	@media screen and (max-width: 1200px){
+		    		margin: 10px 0 0 0;
+		    	}
+		    }
+		}
+	}
+}
