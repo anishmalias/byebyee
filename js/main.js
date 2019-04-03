@@ -249,17 +249,19 @@ $(function(){
 
 		$selectTag.each(function(){
 			var optionValues = [];
+			var optionText = [];
 			$(this).parent().append('<span class="byebyee-c-select--selected"></span><ul class="byebyee-c-select--list"></ul>');
 
 			var $selected = $(this).find(":selected").text();
 			
 			var opts = $(this).find('option').map(function() { 
-				optionValues.push($(this).text());
+				optionValues.push($(this).val());
+				optionText.push($(this).html());
 			}).get();
 					
 			var option = '';
 			for(var i = 0; i < optionValues.length; i++){
-				option += '<li value="' + optionValues[i] + '">' + optionValues[i] + '</li>';
+				option += '<li value="' + optionValues[i] + '">' + optionText[i] + '</li>';
 			}
 			$(this).parent().find(".byebyee-c-select--list").append(option);
 			$(this).parent().find(".byebyee-c-select--selected").text($selected);
@@ -290,8 +292,12 @@ $(function(){
 				// Change select tag values
 
 				var $selectIndex = $(this).index() + 1;
-				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected');
-				$wrapper.find('.byebyee-c-select__init option:nth-child('+ $selectIndex +')').attr('selected', 'selected');
+				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected', 'selected');
+				
+				$wrapper.find('.byebyee-c-select__init option:nth-child('+ $selectIndex +')').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
+				//$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
+				
+				console.log($wrapper.find('.byebyee-c-select__init').val());
 				
 			});
 
@@ -308,6 +314,7 @@ $(function(){
 		});	
 	}
 	selectTag();
+
 
 	// Travel Background set
 
