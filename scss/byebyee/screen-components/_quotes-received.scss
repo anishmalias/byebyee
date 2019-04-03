@@ -75,6 +75,10 @@
 .byebyee-l-item__block{
 	position: relative;
 
+	.byebyee-l-item__pos{
+		position: relative;
+	}
+	
 	.byebyee-l-item-link{
 		position: absolute;
 		top: 0;
