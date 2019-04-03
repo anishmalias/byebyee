@@ -291,10 +291,10 @@ $(function(){
 
 				// Change select tag values
 
-				var $selectIndex = $(this).index() + 1;
+				var $selectIndex = $(this).attr('value');
 				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected', 'selected');
 				
-				$wrapper.find('.byebyee-c-select__init option:nth-child('+ $selectIndex +')').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
+				$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').prop('selected', true).end().trigger('chosen:updated');
 				//$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
 				
 				console.log($wrapper.find('.byebyee-c-select__init').val());
