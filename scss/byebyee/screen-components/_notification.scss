@@ -1,0 +1,71 @@
+.byebyee-notification__wrap{
+	max-width: 953px;
+	margin: 0 auto;
+	background: $white;
+	padding: 42px 42px;
+
+	@include border-radius-all(15px);
+	@include boxShadow(0px 8px 35px rgba($primary_color,0.13));
+
+	ul{
+		margin: 0;
+		padding: 0;
+
+		li{
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+
+			@include flexboxv2();
+			@include align-itemsv2(flex-start);
+
+			@media screen and(max-width: 767px){
+				display: block;
+			}
+
+			+ li{
+				margin-top: 30px;
+				padding-top: 30px;
+				border-top: #e4e2e2 1px solid;
+			}
+
+			.byebyee-l-notification__left{
+				h4{
+					margin: 0 0 3px;
+					padding: 0;
+					font-size: 16px;
+					color: $primary_color;
+					font-weight: 700;
+				}
+				p{
+					margin: 0;
+					padding: 0;
+					font-size: 14px;
+					font-weight: 400;
+					color: $dark-grey-text;
+					line-height: normal;
+
+					+p{
+						margin-top: 13px;
+					}
+				}
+			}
+			.byebyee-l-notification__right{
+				margin-left: auto;
+
+				@include flex-shrinkv2(0);
+
+				@media screen and(max-width: 767px){
+					margin-top: 3px;
+				}
+				
+				span{
+					font-size: 14px;
+					color: $primary_color;
+					font-weight: 400;
+				}
+			}
+		}
+	}
+}
