@@ -21496,4 +21496,72 @@ body.compensate-for-scrollbar {
       background: #f0f8fd;
       color: #d5294f; }
 
+.byebyee-notification__wrap {
+  max-width: 953px;
+  margin: 0 auto;
+  background: #ffffff;
+  padding: 42px 42px;
+  border-radius: 15px;
+  -webkit-border-radius: 15px;
+  -moz-border-radius: 15px;
+  -ms-border-radius: 15px;
+  -o-border-radius: 15px;
+  box-shadow: 0px 8px 35px rgba(213, 41, 79, 0.13);
+  -webkit-box-shadow: 0px 8px 35px rgba(213, 41, 79, 0.13);
+  -moz-box-shadow: 0px 8px 35px rgba(213, 41, 79, 0.13);
+  -ms-box-shadow: 0px 8px 35px rgba(213, 41, 79, 0.13);
+  -o-box-shadow: 0px 8px 35px rgba(213, 41, 79, 0.13); }
+  .byebyee-notification__wrap ul {
+    margin: 0;
+    padding: 0; }
+    .byebyee-notification__wrap ul li {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      display: -webkit-box;
+      display: -webkit-flex;
+      display: -moz-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: start;
+      -ms-flex-align: start;
+      -webkit-align-items: flex-start;
+      -moz-align-items: flex-start;
+      align-items: flex-start; }
+      @media screen and (max-width: 767px) {
+        .byebyee-notification__wrap ul li {
+          display: block; } }
+      .byebyee-notification__wrap ul li + li {
+        margin-top: 30px;
+        padding-top: 30px;
+        border-top: #e4e2e2 1px solid; }
+      .byebyee-notification__wrap ul li .byebyee-l-notification__left h4 {
+        margin: 0 0 3px;
+        padding: 0;
+        font-size: 16px;
+        color: #d5294f;
+        font-weight: 700; }
+      .byebyee-notification__wrap ul li .byebyee-l-notification__left p {
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+        font-weight: 400;
+        color: #282828;
+        line-height: normal; }
+        .byebyee-notification__wrap ul li .byebyee-l-notification__left p + p {
+          margin-top: 13px; }
+      .byebyee-notification__wrap ul li .byebyee-l-notification__right {
+        margin-left: auto;
+        -webkit-flex-shrink: 0;
+        -moz-flex-shrink: 0;
+        -ms-flex-negative: 0;
+        flex-shrink: 0; }
+        @media screen and (max-width: 767px) {
+          .byebyee-notification__wrap ul li .byebyee-l-notification__right {
+            margin-top: 3px; } }
+        .byebyee-notification__wrap ul li .byebyee-l-notification__right span {
+          font-size: 14px;
+          color: #d5294f;
+          font-weight: 400; }
+
 /*# sourceMappingURL=main.css.map */
