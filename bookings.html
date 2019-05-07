@@ -56,34 +56,84 @@
                 </div>
                             
                 <div class="byebyee-c-container--xs pl-0 pr-0">
-                    <div class="byebyee-l-qd__qrap bybeyee-l-bookings__flow">
-                        <div class="byebyee-l-bookings__left">
-                            <div class="bybyee-l-booking__block byebyee-l-booking__transport">
-                                <div class="byebyee-l-booking__beta">
-                                    <div class="bybeyee-l-booking__b-left">
-                                        <span>Transportation Amount</span>
+                    <div class="byebyee-l-qd__qrap">
+                        <div class="byebyee-l-qd__details bybeyee-l-bookings__flow">
+                            <div class="byebyee-l-flow__top">
+                                <div class="byebyee-l-bookings__left">
+                                    <div class="bybyee-l-booking__block byebyee-l-booking__transport">
+                                        <div class="byebyee-l-booking__beta">
+                                            <div class="bybeyee-l-booking__b-left">
+                                                <span class="byebeyee-l-booking__label">Transportation Amount</span>
+                                            </div>
+                                            <div class="bybeyee-l-booking__b-right">
+                                                <span class="byebeyee-l-booking__label">Rs. 20.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="byebyee-l-booking__beta">
+                                            <div class="bybeyee-l-booking__b-left">
+                                                <span class="byebeyee-l-booking__label">Add On features</span>
+                                            </div>
+                                            <div class="bybeyee-l-booking__b-right">
+                                                <span class="byebeyee-l-booking__label">Rs. 0.00</span>
+                                            </div>
+                                        </div>
                                     </div>
-                                    <div class="bybeyee-l-booking__b-right">
-                                        <span>Rs. 20.00</span>
+                                    <div class="bybyee-l-booking__block byebyee-l-booking__total">
+                                        <div class="byebyee-l-booking__beta">
+                                            <div class="bybeyee-l-booking__b-left">
+                                                <h5 class="bybyee-l-booking__title-total">Total Amount</h5>
+                                            </div>
+                                            <div class="bybeyee-l-booking__b-right">
+                                                <span class="byebeyee-l-booking__label">Rs. 0.00</span>
+                                            </div>
+                                        </div>
+                                        <div class="byebyee-l-booking__beta">
+                                            <div class="bybeyee-l-booking__b-left">
+                                                <h5 class="bybyee-l-booking__title-paid">Total Amount <span class="byebyee-c-badge byebyee-c-badge--green byebyee-c-badge--curve">Paid</span></h5>
+                                            </div>
+                                            <div class="bybeyee-l-booking__b-right">
+                                                <span class="byebeyee-l-booking__label">Rs</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="bybyee-l-booking__block byebyee-l-booking__balance">
+                                        <div class="byebyee-l-booking__beta">
+                                            <div class="bybeyee-l-booking__b-left">
+                                                <h5 class="bybyee-l-booking__title-paid">Balance Amount<span class="byebyee-c-badge byebyee-c-badge--blue byebyee-c-badge--curve">Pending</span></h5>
+                                            </div>
+                                            <div class="bybeyee-l-booking__b-right">
+                                                <span class="byebeyee-l-booking__label">Rs</span>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="byebyee-l-booking__beta">
-                                    <div class="bybeyee-l-booking__b-left">
-                                        <span>Add On features</span>
+                                <div class="byebyee-l-booking__right">
+                                    <div class="byebyee-l-booking__map">
+                                        <div id="byee-l-map__init"></div>
                                     </div>
-                                    <div class="bybeyee-l-booking__b-right">
-                                        <span>Rs. 0.00</span>
+                                    <div class="byebyee-l-booking__amount">
+                                        <div class="bybeyee-l-booking__lft">
+                                            <div class="byebyee-l-qd__group">
+                                                <span class="byebyee-l-qd__label">Total Amount</span>
+                                                <h5 class="byebyee-l-qd__value">Rs.1000.00 </h5>
+                                            </div>
+                                        </div>
+                                        <div class="bybeyee-l-booking__right">
+                                            <div class="byebyee-l-qd__group">
+                                                <span class="byebyee-l-qd__label">Advance Amount</span>
+                                                <h5 class="byebyee-l-qd__value"><span class="byebyee-l-qd__icon"><i class="fas fa-check"></i></span> Rs </h5>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="bybyee-l-booking__block byebyee-l-booking__total">
-                                <div class="byebyee-l-booking__beta">
-                                    <div class="bybeyee-l-booking__b-left">
-                                        <h5 class="bybyee-l-booking__title-total">Total Amount</span>
-                                    </div>
-                                    <div class="bybeyee-l-booking__b-right">
-                                        <span>Rs. 0.00</span>
-                                    </div>
+                            <div class="byebyee-l-flow__bottom">
+                                <div class="byebyee-l-flow__bt-left">
+                                    <button class="byebyee-c-btn--black">Pay Balance</button>
+                                </div>
+                                <div class="byebyee-l-flow__bt-right">
+                                    <button class="byebyee-c-btn--green">Reshedule</button>
+                                    <button class="byebyee-c-btn--black">Cancel Trip</button>
                                 </div>
                             </div>
                         </div>
@@ -171,7 +221,7 @@
         <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk_s3m0eFYlHMp_NyDmT6mdx8yNMhRa8A&callback=initMap" type="text/javascript"></script>
 
         <script type="text/javascript">
-            var map1, map2, map3, map4, map5, map6, map7, map8;
+            var map1;
 
                 function initMap() {
 

@@ -468,3 +468,240 @@
 		}
 	}
 }
+
+.bybeyee-l-bookings__flow{
+	.byebyee-l-flow__top{
+		@include flexboxv2();
+		@include align-itemsv2(stretch);
+
+		@media screen and (max-width: 991px){
+			display: block;
+		}
+
+		.byebyee-l-bookings__left{
+			width: 100%;
+
+			@media screen and (max-width: 991px){
+				margin-bottom: 50px;
+			}
+		}
+		.byebyee-l-booking__right{
+			margin-left: 55px;
+
+			@include flexv2(0,0,393px);
+			@include flex-shrinkv2(0);
+			@include flexboxv2();
+			@include flex-directionv2(column);
+
+			@media screen and (max-width: 991px){
+				margin-left: 0;
+			}
+
+			.byebyee-l-booking__map{
+				height: 100%;
+				overflow: hidden;
+				background: lighten($black, 99%);
+
+				@include border-radius-all(15px);
+
+				@media screen and (max-width: 991px){
+					height: 300px;
+				}
+
+				#byee-l-map__init{
+					height: 100%;
+				}
+			}
+		}
+	}
+}
+
+.bybyee-l-booking__block{
+	border-bottom: $harden 1px solid;
+
+	.byebyee-l-booking__beta{
+		@include flexboxv2();
+		@include align-itemsv2(center);
+
+		+ .byebyee-l-booking__beta{
+			margin-top: 10px;
+		}
+		.bybeyee-l-booking__b-left, .bybeyee-l-booking__b-right{
+			.byebeyee-l-booking__label{
+				font-size: 16px;
+				color: $white;
+				font-weight: 400;
+				font-family: $secondary_font;
+			}
+		}
+		.bybeyee-l-booking__b-right{
+			margin-left: auto;
+		}
+	}
+	&.byebyee-l-booking__total{
+		padding: 25px 0;
+
+		.bybyee-l-booking__title-total{
+			font-size: 18px;
+			color: $white;
+			font-weight: 700;
+			font-family: $secondary_font;
+			margin-bottom: 0;
+			line-height: normal;
+		}
+		.bybyee-l-booking__title-paid{
+			font-size: 18px;
+			color: $badge-green;
+			font-weight: 700;
+			font-family: $secondary_font;
+			margin-bottom: 0;
+			line-height: normal;
+
+			@include flexboxv2();
+			@include align-itemsv2(center);
+			@include flex-wrapv2(wrap);
+
+			.byebyee-c-badge{
+				margin-left: 10px;
+			}
+		}
+	}
+	&.byebyee-l-booking__balance{
+		padding: 25px 0;
+
+		.bybyee-l-booking__title-paid{
+			font-size: 18px;
+			color: $badge-blue;
+			font-weight: 700;
+			font-family: $secondary_font;
+			margin-bottom: 0;
+			line-height: normal;
+
+			@include flexboxv2();
+			@include align-itemsv2(center);
+			@include flex-wrapv2(wrap);
+
+			.byebyee-c-badge{ 
+				margin-left: 10px;
+			}
+		}
+	}
+	&.byebyee-l-booking__transport{
+		padding-bottom: 30px;
+	}
+}
+
+.byebyee-l-booking__amount{
+	margin-top: 30px;
+
+	@include flexboxv2();
+	@include align-itemsv2(flex-start);
+
+	@media screen and(max-width: 480px){
+		display: block;
+	}
+
+	.bybeyee-l-booking__lft, .bybeyee-l-booking__right{
+		width: 100%;
+
+		@media screen and(max-width: 480px){
+			margin-top: 10px;
+		}
+	}
+}
+
+.byebyee-l-qd__group{
+	.byebyee-l-qd__label{
+		font-size: 16px;
+		color: $white;
+		font-family: $secondary_font;
+		font-weight: 400;
+		display: block;
+		line-height: normal;
+	}
+	.byebyee-l-qd__value{
+		font-size: 16px;
+		color: $white;
+		font-family: $secondary_font;
+		font-weight: 500;
+		line-height: normal;
+		margin: 0;
+
+		@include flexboxv2();
+		@include align-itemsv2(flex-start);
+
+		span{
+			font-weight: 400;
+		}
+	}
+}
+
+.byebyee-l-flow__bottom{
+	margin-top: 15px;
+
+	@include flexboxv2();
+	@include align-itemsv2(center);
+
+	@media screen and (max-width: 767px){
+		display: block;
+	}
+
+	.byebyee-l-flow__bt-left{
+		text-align: right;
+		width: 100%;
+
+		@media screen and (max-width: 767px){
+			margin-bottom: 10px;
+			text-align: center;
+		}
+		button{
+			@media screen and (max-width: 767px){
+				width: 100%;
+			}	
+		}
+	}
+	.byebyee-l-flow__bt-right{
+		margin-left: 55px;
+
+		@include flexv2(0,0,393px);
+		@include flex-shrinkv2(0);
+		@include flexboxv2();
+		@include justify-contentv2(space-between);
+
+		@media screen and (max-width: 991px){
+			margin-left: 10px;
+		}
+
+		@media screen and (max-width: 480px){
+			display: block;
+			margin-left: 0;
+		}
+
+		button{
+			width: 100%;
+			max-width: 49%;
+			padding-left: 20px;
+			padding-right: 20px;
+
+			@media screen and (max-width: 480px){
+				max-width: 100%;
+				margin: 10px 0;
+				display: block;
+			}
+		}
+	}
+}
+.byebyee-l-qd__icon{
+	background: $gp-green;
+	color: $white;
+	width: 20px;
+	height: 20px;
+	font-size: 11px;
+	margin-right: 5px;
+
+	@include inline-flexv2();
+	@include align-itemsv2(center);
+	@include justify-contentv2(center);
+	@include flex-shrinkv2(0);
+	@include border-radius-all(50%);
+}

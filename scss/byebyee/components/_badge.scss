@@ -25,4 +25,16 @@
 		background: $badge-green;
 		color: $white;   
 	}
+	&.byebyee-c-badge--blue{
+		background: $badge-blue;
+		color: $white;   
+	}
+
+	&.byebyee-c-badge--curve{
+		padding: 2px 17px;
+		font-size: 12px;
+		font-weight: 400;
+
+		@include border-radius-all(35px);
+	}
 } 

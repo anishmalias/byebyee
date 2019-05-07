@@ -132,6 +132,48 @@
 		color: $white;
 	}
 }
+.byebyee-c-btn--black{
+	display: inline-block;
+	background: #2b3245;
+	color: $white;
+	border: none;
+	line-height: normal;
+	font-family: $primary_font;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 19px 46px;
+	outline: none;
+
+	@include border-radius-all(30px);
+	@include transitionAll(background ease 0.2s);
+
+	&:hover, &:focus{
+		background: lighten(#2b3245, 10%);
+		color: $white;
+	}
+}
+
+.byebyee-c-btn--green{
+	display: inline-block;
+	background: #1ecc5a;
+	color: $white;
+	border: none;
+	line-height: normal;
+	font-family: $primary_font;
+	font-weight: 400;
+	font-size: 16px;
+	padding: 19px 46px;
+	outline: none;
+
+	@include border-radius-all(30px);
+	@include transitionAll(background ease 0.2s);
+
+	&:hover, &:focus{
+		background: lighten(#1ecc5a, 10%);
+		color: $white;
+	}
+}
+
 .byebyee-c-btn--primary__shadow{
 	@include boxShadow(0 4px 6px rgba($black,0.06));
 }
