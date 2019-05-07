@@ -235,9 +235,13 @@ $(function(){
 	
 	if($('.byebyee-c-datepicker').exists())
 	{
+		var date = new Date();
+		date.setDate(date.getDate());
+
 		$('.byebyee-c-datepicker').datetimepicker({	
             debug:true,
             collapse: true,
+			startDate: date
 		});
 	}
 	

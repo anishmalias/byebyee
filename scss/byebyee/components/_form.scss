@@ -574,6 +574,32 @@
 	    	&.switch{
 	    		width: auto;
 	    	}
+	    	&.prev, &.next{
+	    		.glyphicon{
+	    			cursor: pointer;
+	    			
+	    			&:after{
+	    				content: '';
+	    				font-family: $byebyee_icons;
+	    				font-size: 15px;
+	    				color: $primary_color;
+	    			}
+	    		}
+	    	}
+	    	&.prev{
+	    		.glyphicon{
+	    			&:after{
+	    				content: "\e90c";
+	    			}
+	    		}
+	    	}
+	    	&.next{
+	    		.glyphicon{
+	    			&:after{
+	    				content: "\e90d";
+	    			}
+	    		}
+	    	}
 	    }
 	    .datepicker-days{
 	    	tbody{
@@ -585,6 +611,8 @@
 	    } 
     	tr{
     		td{
+    			cursor: pointer;
+
     			&.today{
     				background: $dt-select !important;
     				color: $white !important;
@@ -654,6 +682,10 @@
 						background: $dt-active-hover !important;
 						color: $white!important;
 					}
+    			}
+    			&.disabled{
+    				opacity: 0.3;
+    				pointer-events: none;
     			}
     		}
     	}
