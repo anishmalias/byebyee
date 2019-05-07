@@ -295,22 +295,13 @@ $(function(){
 
 				// Change select tag values
 
-<<<<<<< HEAD
-				var $selectIndex = $(this).index() + 1;
-				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected', 'selected');
-				
-				$wrapper.find('.byebyee-c-select__init option:nth-child('+ $selectIndex +')').attr('selected', 'selected').prop('selected', true);
-				//$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
-				
-=======
+
 				var $selectIndex = $(this).attr('value');
 				$wrapper.find('.byebyee-c-select__init option').removeAttr('selected', 'selected');
 				
 				$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').prop('selected', true).end().trigger('chosen:updated');
 				//$wrapper.find('.byebyee-c-select__init option[value='+$selectIndex+']').attr('selected', 'selected').prop('selected', true).end().trigger('chosen:updated');
 				
-				console.log($wrapper.find('.byebyee-c-select__init').val());
->>>>>>> 4988427ac9d18ad44c04bedb728a061b33e789fd
 				
 			});
 
