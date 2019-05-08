@@ -1,0 +1,28 @@
+.byebyee-l-pagination{
+	margin-top: 20px;
+	
+	@include flexboxv2();
+	@include align-itemsv2(center);
+	@include justify-contentv2(center);
+
+	a{
+		width: 30px;
+		height: 30px;
+		font-size: 14px;
+		color: $color-dark-grey;
+		font-weight: 400;
+		font-family: $secondary_font;
+		margin: 0 5px;
+
+		@include border-radius-all(15px);
+		@include transitionAll(color ease 0.2s, background ease 0.2s);
+		@include flexboxv2();
+		@include align-itemsv2(center);
+		@include justify-contentv2(center);
+
+		&:hover, &.active{
+			background: #f0f8fd;
+			color: $primary_color;
+		}
+	}
+}

@@ -56,6 +56,15 @@
 
 	@media screen and(max-width: 600px){
 		display: block;
+
+		@include border-radius-all(7px);
+	}
+	> div{
+		+ div{
+			@media screen and(max-width: 600px){
+				margin-top: 10px;
+			}
+		}
 	}
 	.byebyee-l-flow__left{
 		width: 158px;
@@ -71,10 +80,9 @@
 	}
 	.byebyee-l-flow__right{
 		width: 100%;
-
-		@media screen and(max-width: 600px){
-			margin-top: 10px;
-		}
+	}
+	.byebyee-l-flow__middle{
+		width: 100%;
 	}
 	.byebyee-l-flow__label{
 		font-size: 13px;

@@ -1,0 +1,35 @@
+// Theme byebyee
+
+.smallipop-theme-byebyee{
+	background: $white;
+	border: none;
+	width: 250px;
+
+	@include border-radius-all(15px);
+	@include boxShadow(0px 8px 51px rgba($primary_color,0.1));
+
+	.smallipop-content{
+		padding: 28px 27px; 
+	}
+	&.smallipop-bottom{
+		&:after{
+			content: '';
+			border-style: solid;
+			border-color: transparent transparent $white;
+			border-width: 10px;
+			top: -20px;
+		}
+		&:before{
+			display: none;
+		}
+	}
+	&.smallipop-instance {
+		&:before{
+			content: '';
+			border-style: solid;
+			border-color:$white transparent transparent transparent;
+			border-width: 10px;
+			bottom: -20px;
+		}
+	}
+}

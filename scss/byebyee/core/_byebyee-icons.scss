@@ -24,6 +24,9 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.bb-icon-search:before {
+  content: "\e91b";
+}
 .bb-icon-stay:before {
   content: "\e917";
 }

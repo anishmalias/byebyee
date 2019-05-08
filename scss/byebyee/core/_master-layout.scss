@@ -14,4 +14,20 @@
 	margin: 0 auto;
 	padding-left: 30px;
 	padding-right: 30px;
+
+	@media screen and (max-width: 767px){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
+}
+.byebyee-c-container--xs{
+	max-width: 1004px;
+	padding-left: 30px;
+	padding-right: 30px;
+	margin: 0 auto;
+
+	@media screen and (max-width: 767px){
+		padding-left: 15px;
+		padding-right: 15px;
+	}
 }

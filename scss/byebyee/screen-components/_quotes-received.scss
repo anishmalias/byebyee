@@ -75,6 +75,10 @@
 .byebyee-l-item__block{
 	position: relative;
 
+	.byebyee-l-item__pos{
+		position: relative;
+	}
+	
 	.byebyee-l-item-link{
 		position: absolute;
 		top: 0;
@@ -182,50 +186,18 @@
 				}
 			}
 		}
-		.byebyee-l-item__seat{
-			position: relative;
-			font-size: 18px;
-			color: $white;
-			margin-left: auto;
-			font-weight: 400;
 
-			@include flexboxv2();
-			@include align-itemsv2(center);
+		.byebyee-l-item__seat{			
+			margin-left: auto;
 
 			&:before{
-				content: "\e916";
-				font-family: $byebyee_icons;
-				display: inline-block;
-				font-size: 16px;
 				color: $white;
-				margin-right: 4px;
 			}
 		}
-		.byebyee-l-item__rating{
-			background: #d5294f;
-			font-family: $secondary_font; 
-			padding: 5px;
-			width: 43px;
-			height: 43px;
-			color: $white;
-			margin-left: 22px;			
-
-			@include flexboxv2();
-			@include align-itemsv2(center);
-			@include justify-contentv2(center);
-			@include flex-directionv2(column); 
-			@include flex-shrinkv2(0);
-
-			.byebyee-l-rating__count{
-				font-size: 16px;
-				font-weight: 700;
-				line-height: 12px;
-			}
-			.byebyee-l-rating__label{
-				line-height: normal;
-				font-size: 10px;
-			}
+		.byebyee-l-item__rating{			
+			margin-left: 22px;						
 		}
+
 		.byebyee-l-item__fav{
 			line-height: normal;
 
@@ -418,5 +390,50 @@
 			bottom: 0;
 			margin: auto;
 		}
+	}
+}
+
+.byebyee-l-item__seat{
+	position: relative;
+	font-size: 18px;
+	color: $white;
+	margin-left: auto;
+	font-weight: 400;
+
+	@include flexboxv2();
+	@include align-itemsv2(center);
+
+	&:before{
+		content: "\e916";
+		font-family: $byebyee_icons;
+		display: inline-block;
+		font-size: 16px;
+		color: $white;
+		margin-right: 4px;
+	}
+}
+.byebyee-l-item__rating{
+	background: #d5294f;
+	font-family: $secondary_font; 
+	padding: 5px;
+	width: 43px;
+	height: 43px;
+	color: $white;
+	margin-left: 22px;			
+
+	@include flexboxv2();
+	@include align-itemsv2(center);
+	@include justify-contentv2(center);
+	@include flex-directionv2(column); 
+	@include flex-shrinkv2(0);
+
+	.byebyee-l-rating__count{
+		font-size: 16px;
+		font-weight: 700;
+		line-height: 12px;
+	}
+	.byebyee-l-rating__label{
+		line-height: normal;
+		font-size: 10px;
 	}
 }

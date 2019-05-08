@@ -1,0 +1,48 @@
+
+
+// Google Auto Complete Plugin
+
+.pac-container{
+	border: 1px solid $harden;
+	border-top: 0;
+	margin-top: -1px;
+	font-family: $primary_font;
+
+	@include boxShadow(0px 6px 10px 0px rgba($black, 0.07));
+
+	.pac-item{
+		padding: 14px 18px; 
+		font-size: 13px;
+	    color: $light-grey-text;
+	    cursor: pointer;
+	    line-height: normal;
+	    border-color: $harden;
+
+	    .pac-icon-marker{
+	    	background: none;
+		    height: auto;
+		    width: auto;
+		    line-height: normal;
+		    margin-top: 0;
+
+		    &:before{
+		    	content: "\f3c5";
+				font-family: $font-awesome;
+				display: inline-block;
+				font-size: 15px;
+				color:$primary_color; 
+				font-weight: 900;
+		    }
+	    }
+	    .pac-item-query{
+	    	font-size: 13px;
+			color: $dark-grey-text;
+		    font-weight: 500;
+	    }
+	}
+	&.pac-logo{
+		&:after{
+			display: none;	
+		}
+	}
+}

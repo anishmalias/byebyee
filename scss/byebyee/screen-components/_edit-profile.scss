@@ -1,0 +1,82 @@
+.byebyee-l-edit__profile{
+	max-width: 392px;
+	padding-top: 16px;
+
+	.byebyee-c-formgroup {
+		+ .byebyee-c-formgroup {
+			margin-top: 61px;
+		}
+	}
+	.byebyee-l-profile__save{
+		padding-top: 11px;
+
+		.byebyee-c-sign-up-logo{
+			min-width: 120px; 
+		}
+	}	
+}
+.byebyee-l-form__change-password{
+	position: relative;
+
+	.byebyee-c-link-underline{
+		position: absolute;
+		bottom: 15px;
+    	right: 9px;
+	}
+	.form-control{
+		padding-right: 65px; 
+	}
+}
+
+.byebyee-l-profile__view-block{
+	@include flexboxv2();
+	@include align-itemsv2(center);
+
+	.byebyee-l-profile__left{
+		width: 120px;
+		margin-right: 23px;
+
+		@include flexv2(0,0,120px);
+
+		span{
+			display: block;
+			position: relative;
+			font-size: 14px;
+			color: #747474;
+			line-height: normal;
+			padding-right: 15px;
+
+
+			&:after{
+				content: ':';
+				position: absolute;
+				top: 0px;
+				right: 0px;
+			}
+		}
+	}
+	.byebyee-l-profile__right{
+		width: 100%;
+
+		span{
+			color: $dark-grey-text;
+			font-size: 14px;
+			line-height: normal;
+			font-weight: 500;
+		}
+	}
+	+ .byebyee-l-profile__view-block{
+		margin-top: 2px;
+	}
+}
+.byebyee-l-total-points{
+	padding-top: 26px;
+
+	.byebyee-l-total-point__label{
+		line-height: normal;
+		display: block;
+		font-size: 14px;
+		color: $primary_color;
+		font-weight: 400;
+	}
+}
