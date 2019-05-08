@@ -64,7 +64,7 @@
                         <div class="byebyee-l-search__form">
                             <div class="byebyee-l-search__feild">
                                 <div class="byebyee-c-formgroup--material byebyee-c-formgroup--material-mandatory byebyee-c-formgroup--material-icon">
-                                    <input type="text" class="form-control" name="" required>
+                                    <input type="text" class="form-control" id="byebyee-data__place-from" name="" placeholder="" required>
                                     <label class="byebyee-c-formgroup__label">From</label>
                                     <span class="byebyee-c-form-material__icon">
                                         <i class="bb-icon-needle"></i>
@@ -73,7 +73,7 @@
                             </div>
                             <div class="byebyee-l-search__feild">
                                 <div class="byebyee-c-formgroup--material byebyee-c-formgroup--material-mandatory byebyee-c-formgroup--material-icon">
-                                    <input type="text" class="form-control" name="" required>
+                                    <input type="text" class="form-control" id="byebyee-data__place-to" name="" placeholder="" required>
                                     <label class="byebyee-c-formgroup__label">Where to go?</label>
                                     <span class="byebyee-c-form-material__icon">
                                         <i class="fas fa-map-marker-alt"></i>
@@ -82,13 +82,33 @@
                             </div>   
                             <div class="byebyee-l-search__feild">
                                 <div class="byebyee-c-select--material byebyee-c-select--material--icon byebyee-c-formgroup--material-mandatory">
-                                    <select class="byebyee-c-select__init">
+                                    <select class="byebyee-c-select__init" onclick="this.setAttribute('value', this.value);" value="">
                                         <option value=""></option>
-                                        <option value="1">Alabama</option>
-                                        <option value="2">Boston</option>
-                                        <option value="3">Ohaio</option>
-                                        <option value="4">New York</option>
-                                        <option value="5">Washington</option>
+                                        <option>Alabama</option>
+                                        <option>Boston</option>
+                                        <option>Ohaio</option>
+                                        <option>New York</option>
+                                        <option>Washington</option>
+                                        <option>Alabama</option>
+                                        <option>Boston</option>
+                                        <option>Ohaio</option>
+                                        <option>New York</option>
+                                        <option>Washington</option>
+                                        <option>Alabama</option>
+                                        <option>Boston</option>
+                                        <option>Ohaio</option>
+                                        <option>New York</option>
+                                        <option>Washington</option>
+                                        <option>Alabama</option>
+                                        <option>Boston</option>
+                                        <option>Ohaio</option>
+                                        <option>New York</option>
+                                        <option>Washington</option>
+                                        <option>Alabama</option>
+                                        <option>Boston</option>
+                                        <option>Ohaio</option>
+                                        <option>New York</option>
+                                        <option>Washington</option>
                                     </select>
                                     <label class="byebyee-c-formgroup__label">Trip Type</label>
                                     <span class="byebyee-c-form-material__icon">
@@ -722,6 +742,23 @@
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
+        <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk_s3m0eFYlHMp_NyDmT6mdx8yNMhRa8A&amp;libraries=places"></script>
+
+        <script>
+          google.maps.event.addDomListener(window, 'load', initialize);
+            function initialize() {
+              var inputFrom = document.getElementById('byebyee-data__place-from');
+              var inputTo = document.getElementById('byebyee-data__place-to');
+              var autocomplete = new google.maps.places.Autocomplete(inputFrom);
+              var autocomplete = new google.maps.places.Autocomplete(inputTo);
+              autocomplete.addListener('place_changed', function () {
+              var place = autocomplete.getPlace();
+              // place variable will have all the information you are looking for.
+              $('#lat').val(place.geometry['location'].lat());
+              $('#long').val(place.geometry['location'].lng());
+            });
+          }
+        </script>
     </body>
 </html>
 

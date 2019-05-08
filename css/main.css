@@ -16715,6 +16715,43 @@ body.compensate-for-scrollbar {
 
   .fancybox-thumbs__list a {
     max-width: calc(100% - 10px); } }
+.pac-container {
+  border: 1px solid #e4e2e2;
+  border-top: 0;
+  margin-top: -1px;
+  font-family: "Open Sans";
+  box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07);
+  -webkit-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07);
+  -moz-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07);
+  -ms-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07);
+  -o-box-shadow: 0px 6px 10px 0px rgba(0, 0, 0, 0.07); }
+  .pac-container .pac-item {
+    padding: 14px 18px;
+    font-size: 13px;
+    color: #929292;
+    cursor: pointer;
+    line-height: normal;
+    border-color: #e4e2e2; }
+    .pac-container .pac-item .pac-icon-marker {
+      background: none;
+      height: auto;
+      width: auto;
+      line-height: normal;
+      margin-top: 0; }
+      .pac-container .pac-item .pac-icon-marker:before {
+        content: "\f3c5";
+        font-family: "Font Awesome 5 Free";
+        display: inline-block;
+        font-size: 15px;
+        color: #d5294f;
+        font-weight: 900; }
+    .pac-container .pac-item .pac-item-query {
+      font-size: 13px;
+      color: #282828;
+      font-weight: 500; }
+  .pac-container.pac-logo:after {
+    display: none; }
+
 /* Screen component*/
 .byebyee-c-header {
   padding: 9px 0;
