@@ -2,7 +2,7 @@
 	padding: 9px 0;
 	position: relative;
 	background: $white;
-	z-index: 1;
+	z-index: 2;
 
 	@include boxShadow(0 0 24px rgba($black,.05));
 }
@@ -187,6 +187,116 @@
 		@media screen and (max-width: 991px){
 			display: none;
 		}		
+	}
+	.byebyee-l-user__area{
+		margin-left: auto;
+
+		@media screen and(max-width: 767px){
+			margin-right: 66px;
+		}
+
+		.byebyee-l-user__image{
+			width: 53px;
+			height: 53px;
+			overflow: hidden;
+			cursor: pointer;
+
+			@include flexboxv2();
+			@include align-itemsv2(center);
+			@include justify-contentv2(center);
+
+			@media screen and(max-width: 767px){
+				width: 43px;
+				height: 43px;
+			}
+		}
+		.dropdown-menu{
+			width: 270px;
+			border: none;
+			margin-top: 9px;
+
+			@include border-radius-all(17px);
+			@include boxShadow(4px 7px 35px rgba($primary_color, 0.13));
+
+			.byebyee-l-user-quick-info{
+				padding: 29px 25px;
+
+				h4{
+					color: $black;
+					font-weight: 400;
+					font-size: 30px;
+					margin: 0px 0px 1px;
+					padding: 0; 
+					font-family: $tertiary;
+
+					@media screen and(max-width: 767px){
+						font-size: 23px;
+					}
+				}	
+				p{
+					margin: 0;
+					padding: 0;
+					font-size: 14px;
+					color: $black;
+					font-family: $tertiary;
+					font-weight: 400;
+					line-height: normal;
+
+					+ p{
+						margin-top: 7px;
+					}
+
+					a{
+						color: $black;
+
+						&:hover{
+							color: $primary_color;
+						}
+					}
+				}
+			}
+			.byebyee-l-drp__list{
+				ul{
+					margin: 0;
+					padding: 0;
+
+					li{
+						list-style: none;
+						padding: 0;
+						margin: 0;
+
+						a{
+							display: block;
+							font-size: 14px;
+							color: $black;
+							line-height: normal;
+							padding: 20px 24px 20px 24px;
+
+							@include transitionAll(color ease 0.2s);
+
+							&:hover{
+								color: $primary_color;
+							}
+						}
+						+ li{
+							a{
+								border-top: #e1e1e1 1px solid; 
+							}
+						}
+						&.byebyee-l-logout{
+							a{
+								@include flexboxv2();
+								@include align-itemsv2(center);
+
+								span{
+									font-weight: 700;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
 	}
 }
 .byebyee-l-social-connect{
