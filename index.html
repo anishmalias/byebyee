@@ -36,9 +36,30 @@
                             <span class="line"></span>
                         </a>
                     </div>
-                    <div class="byebyee-l-signup-wrap">
-                        <a href="#" class="bybeyee-c-btn--plan-text byebyee-btn__login" data-src="#byebyee-l-signup__modal">Sign up</a>
-                        <a href="javascript:void(0)" class="bybeyee-c-btn--border byebyee-btn__login" data-src="#byebyee-l-login__modal">Log in</a>
+                    
+                    <div class="byebyee-l-user__area dropdown">
+                        <div class="byebyee-l-user__image" role="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                           <img src="img/img-user.png" class="img-fluid">
+                        </div>
+                        <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                            <div class="byebyee-l-user-quick-info">
+                                <h4>John Deo</h4>
+                                <p><a href="#">johndeo@gmail.com</a></p>
+                                <p>+91 876543210</p>
+                            </div>
+                            <div class="byebyee-l-drp__list">
+                                <ul>
+                                    <li><a href="#">Wishlist</a></li>
+                                    <li><a href="#">Your wallet</a></li>
+                                    <li><a href="#">Settings</a></li>
+                                    <li class="byebyee-l-logout">
+                                        <a href="#">
+                                            <span>Logout</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
                     <div class="byebyee-l-social-connect">
                         <a href="#" class="byebyee-l-social__fb"><i class="fab fa-facebook-f"></i></a>
@@ -740,6 +761,7 @@
         </div>
 
         <script src="js/vendor/jquery-1.11.2.min.js"></script>
+        <script src="js/vendor/popper.min.js"></script>
         <script src="js/vendor/bootstrap.min.js"></script>
         <script src="js/main.js"></script>
         <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBk_s3m0eFYlHMp_NyDmT6mdx8yNMhRa8A&amp;libraries=places"></script>

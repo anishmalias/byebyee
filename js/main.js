@@ -458,5 +458,6 @@ $(function(){
 			baseClass: 'byebyee-l-modal__login'
 		});
 	}
+	$('.byebyee-l-user__image a').dropdown()
 });
 
